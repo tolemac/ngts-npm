@@ -1,0 +1,15 @@
+{
+	"compilerOptions": {
+		"declaration": true,
+		"module": "system",
+		"target": "es5",
+		"noImplicitAny": false,
+		"outDir": "dist",
+        "experimentalDecorators": true,
+        "emitDecoratorMetadata": true,
+        "sourceMap": false        
+	},
+	"files": [
+		"src/ngts.ts"
+	]
+}

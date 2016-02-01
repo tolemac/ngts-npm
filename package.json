@@ -1,0 +1,25 @@
+{
+  "name": "ngts-npm",
+  "version": "0.0.1",
+  "description": "npm package for ngts",
+  "main": "dist/ngts.js",
+  "scripts": {
+    "preinstall": "npm install autodts",
+    "postinstall": "autodts link",
+    "prepublish": "tsd install && tsc && autodts generate",
+    "test": "node test/test.js"
+  },
+  "author": "Javier Ros (tolemaC)",
+  "license": "MIT",
+  "typings": "dist/ngts",
+  "typescript": {
+    "definition": "index.d.ts"
+  },
+  "dependencies": {
+    "autodts": "~0.0.4"
+  },
+  "devDependencies": {
+    "@lib/autodts-generator": "~0.0.1",
+    "typescript": "~1.7.5"
+  }
+}
